@@ -13,7 +13,10 @@ const Login = () =>{
     const handleSubmit = (e) =>{
         
       e.preventDefault()
-      navigate('/dishesList')
+      
+      localStorage.setItem('user',username)
+      
+      navigate('/home')
     }
 
 

@@ -1,5 +1,5 @@
 {
-  "name": "my-ecomm",
+  "name": "expense-tracker-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

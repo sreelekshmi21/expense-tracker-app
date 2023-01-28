@@ -1,0 +1,19 @@
+.list-details{
+    margin-top:40px;
+}
+ul.list-group li{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.form-btn{
+    margin-top:30px;
+    margin-bottom:40px;
+}
+.greenColor{
+    background-color: #9be5c3;
+}
+.redColor{
+    background-color: #efb39d;
+}
+

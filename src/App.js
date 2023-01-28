@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+
 import React, {Component} from 'react';
-import './App.css';
+import './components/css/transaction.css';
 import {Route, Routes} from 'react-router-dom';
 import Login from './components/Login'
-import DishesList from './components/DishesList'
-import Detail from './components/Detail'
+import Home from './components/Home'
+import TransactionsList from './components/TransactionsList'
+import { GlobalProvider } from './components/context/GlobalState';
 
 
-class App extends Component{
+const App = () =>{
   
-  render(){
+  
   return (
-    <div className="app">
+    <>
+      <GlobalProvider>
       <Routes>
           <Route exact path='/' element={<Login />} />
-          <Route path='/dishesList' element={<DishesList />} />
-          <Route path='/details' element={<Detail />} />
-      </Routes>
-    </div>
-  );
-  }
+          <Route path='/home' element={<Home />} />
+          <Route path='/transactionslist' element={<TransactionsList />} />
+
+        </Routes> 
+        
+
+      </GlobalProvider>
+      
+    </>  
+    ); 
+      
+  
+  
+  
 }
 export default App;
